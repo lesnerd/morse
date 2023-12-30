@@ -8,9 +8,9 @@ import (
 
 // Message represents a message sent by the user
 type Message struct {
-	ID   string `json:"id"`
-	To   string `json:"to"`
-	Text string `json:"text"`
+	FromId string `json:"from"`
+	ToId   string `json:"to"`
+	Text   string `json:"text"`
 }
 
 func GetMessages(c *gin.Context) {
